@@ -39,7 +39,6 @@ print(output2)
 output3 = F.conv2d(input, kernel, stride=1, padding=1)
 print(output3)
 
-
-
+1111111111111111
 
 
