@@ -8,7 +8,7 @@ __pycache__/
 
 
 ##############################################排除数据集压缩
-*.gz
+*.tar.gz
 
 # Distribution / packaging
 .Python
