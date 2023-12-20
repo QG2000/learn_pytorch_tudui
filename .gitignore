@@ -9,7 +9,8 @@ __pycache__/
 
 ##############################################排除数据集压缩
 *.tar.gz
-
+dataset/
+-
 # Distribution / packaging
 .Python
 build/
