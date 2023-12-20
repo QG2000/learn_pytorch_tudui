@@ -1,11 +1,24 @@
-
 import torchvision
+from torch.utils.tensorboard import SummaryWriter
 
-tran_set = torchvision.datasets.CIFAR10(root="./dataset", train=True, download=True)
-test_set = torchvision.datasets.CIFAR10(root="./dataset", train=False, download=True)
+datasets_transform = torchvision.transforms.Compose([
+    torchvision.transforms.ToTensor()
+])
 
-print(test_set[0])
+tran_set = torchvision.datasets.CIFAR10(root="./dataset", train=True, transform=datasets_transform, download=True)
+test_set = torchvision.datasets.CIFAR10(root="./dataset", train=False, transform=datasets_transform, download=True)
 
-111
-11
-11111
+# img, target = test_set[0]
+# print(img)
+# print(target)
+# print(test_set.classes[target])
+# img.show()
+
+# print(test_set[0])
+
+writer = SummaryWriter("p10")
+for i in range(10):
+    img, target = test_set[i]
+    writer.add_image("test_set", img, i)
+
+writer.close()
