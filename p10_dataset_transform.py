@@ -7,3 +7,5 @@ test_set = torchvision.datasets.CIFAR10(root="./dataset", train=False, download=
 print(test_set[0])
 
 111
+11
+11
