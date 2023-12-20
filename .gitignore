@@ -6,6 +6,10 @@ __pycache__/
 # C extensions
 *.so
 
+
+##############################################排除数据集压缩
+*.gz
+
 # Distribution / packaging
 .Python
 build/
