@@ -16,7 +16,7 @@ test_set = torchvision.datasets.CIFAR10(root="./dataset", train=False, transform
 
 # print(test_set[0])
 
-writer = SummaryWriter("p10")
+writer = SummaryWriter("../p10")
 for i in range(10):
     img, target = test_set[i]
     writer.add_image("test_set", img, i)

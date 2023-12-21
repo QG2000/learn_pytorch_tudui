@@ -9,6 +9,7 @@ __pycache__/
 
 ##############################################排除数据集压缩
 dataset/
+data/
 #################################忽略python解释器配置
 .idea/learn_pytorch_tudui.iml
 .idea/misc.xml
